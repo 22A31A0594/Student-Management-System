@@ -8,12 +8,16 @@ It is designed for beginners learning **Python GUI programming** and database co
 
 ## 🚀 Features
 
-✅ **Admin Login Page**  
-✅ **MySQL Database Connectivity**  
-✅ **Add, Update, Delete, and Search Student Records**  
-✅ **Real-Time Clock Display**  
-✅ **Attractive GUI using Tkinter & Pillow**  
-✅ **Error Handling with Message Boxes**
+- Admin login authentication
+- Add new student records
+- Update existing student records
+- Delete student records
+- Search students by ID, Name, Email, Mobile, Address, Gender, or DOB
+- View all students in a table with scrollable interface
+- Export student data to CSV files
+- Connect to MySQL database dynamically
+- Real-time date and time display
+- User-friendly GUI with Tkinter themes
 
 ---
 
@@ -28,15 +32,44 @@ It is designed for beginners learning **Python GUI programming** and database co
 
 ---
 
-## 🗂️ Project Structure
+## **Folder Structure**
 
-## ⚙️ How to Run the Project
+---
 
-### Step 1️⃣ — Clone or Download the Repository
-Click the **Code → Download ZIP** button on GitHub, then extract it to your computer.
+## **Requirements**
 
-### Step 2️⃣ — Install Required Libraries
-Open your command prompt (or terminal) inside the project folder and run:
+- Python 3.x
+- Tkinter (comes pre-installed with Python)
+- ttkthemes
+- Pillow (PIL)
+- pandas
+- pymysql
+- MySQL server installed and running
+
+Install Python packages using pip:
 
 ```bash
-pip install pymysql pillow ttkthemes
+pip install ttkthemes pillow pandas pymysql
+```
+
+## **How to Run**
+
+1. Make sure **MySQL server** is installed and running.
+ 
+2. Open `main.py` in your preferred Python IDE (e.g., PyCharm, VS Code).
+ 
+3. Run the file:
+
+```bash
+python main.py
+```
+4. Login using credentials:
+
+ - Username: your username
+
+ - Password: your password
+
+5. Connect to your MySQL database using host, username, and password.
+
+6. Start managing student records using the GUI.
+
