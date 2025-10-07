@@ -246,7 +246,7 @@ def delete_student():
     if res:
         query = 'delete from student where id = %s'
         mycursor.execute(query, content_id)
-
+        messagebox.showinfo('Success', f'student having id:{content_id} has successfully deleted.')
 
     query = 'select * from student'
     mycursor.execute(query)
@@ -254,7 +254,7 @@ def delete_student():
     stutable.delete(*stutable.get_children())
     for data in fetched_data:
         stutable.insert('', END, values = data)
-    messagebox.showinfo('Success', f'student having id:{content_id} has successfully deleted.')
+    
     cnt.commit()
 
 def show_students():
@@ -268,7 +268,7 @@ def show_students():
 
 def update_data():
     query = '''UPDATE student 
-               SET name=%s, mobile=%s, email=%s, address=%s, gender=%s, dob=%s, date=%s, time=%s 
+               SET id=%s, name=%s, mobile=%s, email=%s, address=%s, gender=%s, dob=%s, date=%s, time=%s 
                WHERE id=%s'''
     mycursor.execute(query, (
         nameentry.get(),
@@ -415,6 +415,7 @@ stutable.column('Added Time', width = 150, anchor=CENTER)
 style = ttk.Style()
 style.configure('Treeview',rowheight = 30, font = ('arial', 11))
 style.configure('Treeview.Heading', font = ('arial', 13))
+
 
 
 window.mainloop()
