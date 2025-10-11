@@ -47,6 +47,7 @@ Install Python packages using pip:
 ```bash
 pip install ttkthemes pillow pandas pymysql
 ```
+---
 
 ## **How to Run**
 
