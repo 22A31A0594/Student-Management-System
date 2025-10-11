@@ -32,10 +32,6 @@ It is designed for beginners learning **Python GUI programming** and database co
 
 ---
 
-## **Folder Structure**
-
----
-
 ## **Requirements**
 
 - Python 3.x
